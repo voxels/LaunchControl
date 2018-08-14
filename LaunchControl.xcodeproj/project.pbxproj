@@ -10,6 +10,30 @@
 		1ECF4153212345230015164C /* LaunchControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECF4149212345220015164C /* LaunchControl.framework */; };
 		1ECF4158212345230015164C /* LaunchControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4157212345230015164C /* LaunchControlTests.swift */; };
 		1ECF415A212345230015164C /* LaunchControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ECF414C212345220015164C /* LaunchControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ECF4164212345330015164C /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4163212345330015164C /* LaunchController.swift */; };
+		1ECF4166212345780015164C /* ResourceModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4165212345780015164C /* ResourceModelController.swift */; };
+		1ECF416A212346420015164C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4167212346420015164C /* Resource.swift */; };
+		1ECF416B212346420015164C /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4168212346420015164C /* ImageResource.swift */; };
+		1ECF416C212346420015164C /* ImageSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4169212346420015164C /* ImageSchema.swift */; };
+		1ECF416F2123465D0015164C /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF416D2123465D0015164C /* ImageRepository.swift */; };
+		1ECF41702123465D0015164C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF416E2123465D0015164C /* Repository.swift */; };
+		1ECF4173212346770015164C /* RemoteStoreTableMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4171212346770015164C /* RemoteStoreTableMap.swift */; };
+		1ECF4174212346770015164C /* RemoteStoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4172212346770015164C /* RemoteStoreController.swift */; };
+		1ECF4177212346AB0015164C /* LaunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4175212346AB0015164C /* LaunchService.swift */; };
+		1ECF4178212346AB0015164C /* LaunchControlKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4176212346AB0015164C /* LaunchControlKey.swift */; };
+		1ECF417C212346DD0015164C /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4179212346DD0015164C /* Obfuscator.swift */; };
+		1ECF417D212346DD0015164C /* Extractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF417A212346DD0015164C /* Extractor.swift */; };
+		1ECF417E212346DD0015164C /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF417B212346DD0015164C /* SynchronizedArray.swift */; };
+		1ECF4180212347100015164C /* ErrorHandlerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF417F212347100015164C /* ErrorHandlerDelegate.swift */; };
+		1ECF41822123473F0015164C /* LogHandlerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF41812123473F0015164C /* LogHandlerDelegate.swift */; };
+		1ECF4187212347860015164C /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4184212347860015164C /* Collection.swift */; };
+		1ECF4188212347860015164C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4185212347860015164C /* Notification.swift */; };
+		1ECF418D212347AD0015164C /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4189212347AC0015164C /* ModelError.swift */; };
+		1ECF418E212347AD0015164C /* RemoteStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF418A212347AD0015164C /* RemoteStoreError.swift */; };
+		1ECF418F212347AD0015164C /* LaunchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF418B212347AD0015164C /* LaunchError.swift */; };
+		1ECF4190212347AD0015164C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF418C212347AD0015164C /* NetworkError.swift */; };
+		1ECF4192212347D40015164C /* NetworkSessionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4191212347D40015164C /* NetworkSessionInterface.swift */; };
+		1ECF419821234D8C0015164C /* LockoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF419721234D8C0015164C /* LockoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +53,30 @@
 		1ECF4152212345230015164C /* LaunchControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ECF4157212345230015164C /* LaunchControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchControlTests.swift; sourceTree = "<group>"; };
 		1ECF4159212345230015164C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ECF4163212345330015164C /* LaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
+		1ECF4165212345780015164C /* ResourceModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceModelController.swift; sourceTree = "<group>"; };
+		1ECF4167212346420015164C /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		1ECF4168212346420015164C /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		1ECF4169212346420015164C /* ImageSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSchema.swift; sourceTree = "<group>"; };
+		1ECF416D2123465D0015164C /* ImageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
+		1ECF416E2123465D0015164C /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1ECF4171212346770015164C /* RemoteStoreTableMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStoreTableMap.swift; sourceTree = "<group>"; };
+		1ECF4172212346770015164C /* RemoteStoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStoreController.swift; sourceTree = "<group>"; };
+		1ECF4175212346AB0015164C /* LaunchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchService.swift; sourceTree = "<group>"; };
+		1ECF4176212346AB0015164C /* LaunchControlKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchControlKey.swift; sourceTree = "<group>"; };
+		1ECF4179212346DD0015164C /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
+		1ECF417A212346DD0015164C /* Extractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extractor.swift; sourceTree = "<group>"; };
+		1ECF417B212346DD0015164C /* SynchronizedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
+		1ECF417F212347100015164C /* ErrorHandlerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlerDelegate.swift; sourceTree = "<group>"; };
+		1ECF41812123473F0015164C /* LogHandlerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHandlerDelegate.swift; sourceTree = "<group>"; };
+		1ECF4184212347860015164C /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		1ECF4185212347860015164C /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		1ECF4189212347AC0015164C /* ModelError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
+		1ECF418A212347AD0015164C /* RemoteStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStoreError.swift; sourceTree = "<group>"; };
+		1ECF418B212347AD0015164C /* LaunchError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchError.swift; sourceTree = "<group>"; };
+		1ECF418C212347AD0015164C /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1ECF4191212347D40015164C /* NetworkSessionInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionInterface.swift; sourceTree = "<group>"; };
+		1ECF419721234D8C0015164C /* LockoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +120,12 @@
 			isa = PBXGroup;
 			children = (
 				1ECF414C212345220015164C /* LaunchControl.h */,
+				1ECF4163212345330015164C /* LaunchController.swift */,
+				1ECF419B21234F3C0015164C /* Model */,
+				1ECF419921234EF70015164C /* View */,
+				1ECF41A0212350460015164C /* Extension */,
+				1ECF419F212350140015164C /* Utility */,
+				1ECF41A1212350590015164C /* Error */,
 				1ECF414D212345220015164C /* Info.plist */,
 			);
 			path = LaunchControl;
@@ -84,6 +138,88 @@
 				1ECF4159212345230015164C /* Info.plist */,
 			);
 			path = LaunchControlTests;
+			sourceTree = "<group>";
+		};
+		1ECF419921234EF70015164C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1ECF419721234D8C0015164C /* LockoutViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1ECF419B21234F3C0015164C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1ECF4176212346AB0015164C /* LaunchControlKey.swift */,
+				1ECF4171212346770015164C /* RemoteStoreTableMap.swift */,
+				1ECF4191212347D40015164C /* NetworkSessionInterface.swift */,
+				1ECF419E21234F7D0015164C /* Object */,
+				1ECF419D21234F6A0015164C /* Controller */,
+				1ECF419C21234F4A0015164C /* Protocol */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1ECF419C21234F4A0015164C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				1ECF4175212346AB0015164C /* LaunchService.swift */,
+				1ECF41812123473F0015164C /* LogHandlerDelegate.swift */,
+				1ECF417F212347100015164C /* ErrorHandlerDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		1ECF419D21234F6A0015164C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ECF4165212345780015164C /* ResourceModelController.swift */,
+				1ECF4172212346770015164C /* RemoteStoreController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ECF419E21234F7D0015164C /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				1ECF4167212346420015164C /* Resource.swift */,
+				1ECF416E2123465D0015164C /* Repository.swift */,
+				1ECF416D2123465D0015164C /* ImageRepository.swift */,
+				1ECF4169212346420015164C /* ImageSchema.swift */,
+				1ECF4168212346420015164C /* ImageResource.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		1ECF419F212350140015164C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1ECF417B212346DD0015164C /* SynchronizedArray.swift */,
+				1ECF4179212346DD0015164C /* Obfuscator.swift */,
+				1ECF417A212346DD0015164C /* Extractor.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1ECF41A0212350460015164C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1ECF4184212347860015164C /* Collection.swift */,
+				1ECF4185212347860015164C /* Notification.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1ECF41A1212350590015164C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				1ECF418B212347AD0015164C /* LaunchError.swift */,
+				1ECF4189212347AC0015164C /* ModelError.swift */,
+				1ECF418C212347AD0015164C /* NetworkError.swift */,
+				1ECF418A212347AD0015164C /* RemoteStoreError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +284,7 @@
 				TargetAttributes = {
 					1ECF4148212345220015164C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					1ECF4151212345230015164C = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +331,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECF417D212346DD0015164C /* Extractor.swift in Sources */,
+				1ECF418F212347AD0015164C /* LaunchError.swift in Sources */,
+				1ECF4190212347AD0015164C /* NetworkError.swift in Sources */,
+				1ECF417E212346DD0015164C /* SynchronizedArray.swift in Sources */,
+				1ECF418D212347AD0015164C /* ModelError.swift in Sources */,
+				1ECF41702123465D0015164C /* Repository.swift in Sources */,
+				1ECF4180212347100015164C /* ErrorHandlerDelegate.swift in Sources */,
+				1ECF416A212346420015164C /* Resource.swift in Sources */,
+				1ECF4177212346AB0015164C /* LaunchService.swift in Sources */,
+				1ECF416F2123465D0015164C /* ImageRepository.swift in Sources */,
+				1ECF4174212346770015164C /* RemoteStoreController.swift in Sources */,
+				1ECF4173212346770015164C /* RemoteStoreTableMap.swift in Sources */,
+				1ECF4187212347860015164C /* Collection.swift in Sources */,
+				1ECF416C212346420015164C /* ImageSchema.swift in Sources */,
+				1ECF419821234D8C0015164C /* LockoutViewController.swift in Sources */,
+				1ECF416B212346420015164C /* ImageResource.swift in Sources */,
+				1ECF4192212347D40015164C /* NetworkSessionInterface.swift in Sources */,
+				1ECF418E212347AD0015164C /* RemoteStoreError.swift in Sources */,
+				1ECF4188212347860015164C /* Notification.swift in Sources */,
+				1ECF4178212346AB0015164C /* LaunchControlKey.swift in Sources */,
+				1ECF4164212345330015164C /* LaunchController.swift in Sources */,
+				1ECF4166212345780015164C /* ResourceModelController.swift in Sources */,
+				1ECF41822123473F0015164C /* LogHandlerDelegate.swift in Sources */,
+				1ECF417C212346DD0015164C /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +500,7 @@
 		1ECF415E212345230015164C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +518,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noisederived.LaunchControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +528,7 @@
 		1ECF415F212345230015164C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -381,6 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noisederived.LaunchControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +555,7 @@
 		1ECF4161212345230015164C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FTMC23LTVL;
 				INFOPLIST_FILE = LaunchControlTests/Info.plist;
@@ -407,6 +574,7 @@
 		1ECF4162212345230015164C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FTMC23LTVL;
 				INFOPLIST_FILE = LaunchControlTests/Info.plist;
