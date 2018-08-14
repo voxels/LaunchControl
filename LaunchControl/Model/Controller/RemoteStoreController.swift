@@ -15,9 +15,9 @@ protocol RemoteStoreController : LaunchService {
     var serverURLString:String { get }
     var defaultQuerySize:Int { get }
     
-    func find(table: RemoteStoreTableMap, sortBy: String?, skip: Int, limit: Int, on queue:DispatchQueue, errorHandler:ErrorHandlerDelegate, completion: @escaping RawResourceArrayCompletion) -> Void
-    func count(table:RemoteStoreTableMap, on queue:DispatchQueue, errorHandler:ErrorHandlerDelegate, completion:@escaping((Int)->Void))
-    func validate(sortBy:String, in schemaClass:RemoteStoreTableMap) throws -> Void
+    func find(table: ImageTableMap, sortBy: String?, skip: Int, limit: Int, on queue:DispatchQueue, errorHandler:ErrorHandlerDelegate, completion: @escaping RawResourceArrayCompletion) -> Void
+    func count(table:ImageTableMap, on queue:DispatchQueue, errorHandler:ErrorHandlerDelegate, completion:@escaping((Int)->Void))
+    func validate(sortBy:String, in schemaClass:ImageTableMap) throws -> Void
 }
 
 extension RemoteStoreController {
@@ -27,14 +27,14 @@ extension RemoteStoreController {
      - parameter table: the *RemoteStoreTable* containing the desired column
      - Throws: a *RemoteStoreError.InvalidSortByColumn* error if the column does not exist in the table schema
      */
-    func validate(sortBy:String, in table:RemoteStoreTableMap) throws -> Void {
-        if RemoteStoreTableMap.CommonColumn.init(rawValue: sortBy) != nil{
+    func validate(sortBy:String, in table:ImageTableMap) throws -> Void {
+        if TableMap.CommonColumn.init(rawValue: sortBy) != nil{
             return
         }
         
         switch table {
         case .ImageResource:
-            if RemoteStoreTableMap.ImageResourceColumn.init(rawValue: sortBy) != nil {
+            if ImageTableMap.ImageResourceColumn.init(rawValue: sortBy) != nil {
                 return
             }
         }

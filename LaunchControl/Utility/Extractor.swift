@@ -12,7 +12,7 @@ struct Extractor {
     static func extractValue<T>(named key:String, from dictionary:[String:AnyObject]) throws -> T {
         
         guard var value = dictionary[key] else {
-            if key == RemoteStoreTableMap.CommonColumn.objectId.rawValue {
+            if key == TableMap.CommonColumn.objectId.rawValue {
                 throw ModelError.EmptyObjectId
             } else {
                 throw ModelError.MissingValue

@@ -56,7 +56,7 @@ class ImageResource : ImageSchema  {
         
         rawResourceArray.forEach { (dictionary) in
             do {
-                let objectId:String = try Extractor.extractValue(named: RemoteStoreTableMap.CommonColumn.objectId.rawValue, from: dictionary)
+                let objectId:String = try Extractor.extractValue(named: TableMap.CommonColumn.objectId.rawValue, from: dictionary)
                 
                 foundImageResource = true
                 let imageResource = try ImageResource.imageResource(from: dictionary)
@@ -81,13 +81,13 @@ class ImageResource : ImageSchema  {
      - Returns: an *ImageResource* for the given raw model object
      */
     static func imageResource(from dictionary:[String:AnyObject]) throws -> ImageResource {
-        let createdAt:Date = try Extractor.extractValue(named: RemoteStoreTableMap.CommonColumn.createdAt.rawValue, from: dictionary)
-        let updatedAt:Date = try Extractor.extractValue(named: RemoteStoreTableMap.CommonColumn.updatedAt.rawValue, from: dictionary)
-        let filename:String = try Extractor.extractValue(named: RemoteStoreTableMap.ImageResourceColumn.filename.rawValue, from: dictionary)
-        let thumbnailURL:URL = try Extractor.extractValue(named: RemoteStoreTableMap.ImageResourceColumn.thumbnailURLString.rawValue, from: dictionary)
-        let fileURL:URL = try Extractor.extractValue(named: RemoteStoreTableMap.ImageResourceColumn.fileURLString.rawValue, from: dictionary)
-        let width:Int = try Extractor.extractValue(named: RemoteStoreTableMap.ImageResourceColumn.width.rawValue, from: dictionary)
-        let height:Int = try Extractor.extractValue(named: RemoteStoreTableMap.ImageResourceColumn.height.rawValue, from: dictionary)
+        let createdAt:Date = try Extractor.extractValue(named: TableMap.CommonColumn.createdAt.rawValue, from: dictionary)
+        let updatedAt:Date = try Extractor.extractValue(named: TableMap.CommonColumn.updatedAt.rawValue, from: dictionary)
+        let filename:String = try Extractor.extractValue(named: ImageTableMap.ImageResourceColumn.filename.rawValue, from: dictionary)
+        let thumbnailURL:URL = try Extractor.extractValue(named: ImageTableMap.ImageResourceColumn.thumbnailURLString.rawValue, from: dictionary)
+        let fileURL:URL = try Extractor.extractValue(named: ImageTableMap.ImageResourceColumn.fileURLString.rawValue, from: dictionary)
+        let width:Int = try Extractor.extractValue(named: ImageTableMap.ImageResourceColumn.width.rawValue, from: dictionary)
+        let height:Int = try Extractor.extractValue(named: ImageTableMap.ImageResourceColumn.height.rawValue, from: dictionary)
         
         return ImageResource(createdAt: createdAt, updatedAt: updatedAt, filename: filename, thumbnailURL: thumbnailURL, fileURL: fileURL, width:width, height:height)
     }

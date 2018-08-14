@@ -17,7 +17,7 @@
 		1ECF416C212346420015164C /* ImageSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4169212346420015164C /* ImageSchema.swift */; };
 		1ECF416F2123465D0015164C /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF416D2123465D0015164C /* ImageRepository.swift */; };
 		1ECF41702123465D0015164C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF416E2123465D0015164C /* Repository.swift */; };
-		1ECF4173212346770015164C /* RemoteStoreTableMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4171212346770015164C /* RemoteStoreTableMap.swift */; };
+		1ECF4173212346770015164C /* ImageTableMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4171212346770015164C /* ImageTableMap.swift */; };
 		1ECF4174212346770015164C /* RemoteStoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4172212346770015164C /* RemoteStoreController.swift */; };
 		1ECF4177212346AB0015164C /* LaunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4175212346AB0015164C /* LaunchService.swift */; };
 		1ECF4178212346AB0015164C /* LaunchControlKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4176212346AB0015164C /* LaunchControlKey.swift */; };
@@ -34,6 +34,7 @@
 		1ECF4190212347AD0015164C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF418C212347AD0015164C /* NetworkError.swift */; };
 		1ECF4192212347D40015164C /* NetworkSessionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4191212347D40015164C /* NetworkSessionInterface.swift */; };
 		1ECF419821234D8C0015164C /* LockoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF419721234D8C0015164C /* LockoutViewController.swift */; };
+		1ECF41A3212351F00015164C /* TableMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF41A2212351F00015164C /* TableMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,7 @@
 		1ECF4169212346420015164C /* ImageSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSchema.swift; sourceTree = "<group>"; };
 		1ECF416D2123465D0015164C /* ImageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		1ECF416E2123465D0015164C /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		1ECF4171212346770015164C /* RemoteStoreTableMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStoreTableMap.swift; sourceTree = "<group>"; };
+		1ECF4171212346770015164C /* ImageTableMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableMap.swift; sourceTree = "<group>"; };
 		1ECF4172212346770015164C /* RemoteStoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStoreController.swift; sourceTree = "<group>"; };
 		1ECF4175212346AB0015164C /* LaunchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchService.swift; sourceTree = "<group>"; };
 		1ECF4176212346AB0015164C /* LaunchControlKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchControlKey.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		1ECF418C212347AD0015164C /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		1ECF4191212347D40015164C /* NetworkSessionInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionInterface.swift; sourceTree = "<group>"; };
 		1ECF419721234D8C0015164C /* LockoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockoutViewController.swift; sourceTree = "<group>"; };
+		1ECF41A2212351F00015164C /* TableMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				1ECF4176212346AB0015164C /* LaunchControlKey.swift */,
-				1ECF4171212346770015164C /* RemoteStoreTableMap.swift */,
 				1ECF4191212347D40015164C /* NetworkSessionInterface.swift */,
 				1ECF419E21234F7D0015164C /* Object */,
 				1ECF419D21234F6A0015164C /* Controller */,
@@ -188,6 +189,8 @@
 				1ECF416D2123465D0015164C /* ImageRepository.swift */,
 				1ECF4169212346420015164C /* ImageSchema.swift */,
 				1ECF4168212346420015164C /* ImageResource.swift */,
+				1ECF41A2212351F00015164C /* TableMap.swift */,
+				1ECF4171212346770015164C /* ImageTableMap.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -336,13 +339,14 @@
 				1ECF4190212347AD0015164C /* NetworkError.swift in Sources */,
 				1ECF417E212346DD0015164C /* SynchronizedArray.swift in Sources */,
 				1ECF418D212347AD0015164C /* ModelError.swift in Sources */,
+				1ECF41A3212351F00015164C /* TableMap.swift in Sources */,
 				1ECF41702123465D0015164C /* Repository.swift in Sources */,
 				1ECF4180212347100015164C /* ErrorHandlerDelegate.swift in Sources */,
 				1ECF416A212346420015164C /* Resource.swift in Sources */,
 				1ECF4177212346AB0015164C /* LaunchService.swift in Sources */,
 				1ECF416F2123465D0015164C /* ImageRepository.swift in Sources */,
 				1ECF4174212346770015164C /* RemoteStoreController.swift in Sources */,
-				1ECF4173212346770015164C /* RemoteStoreTableMap.swift in Sources */,
+				1ECF4173212346770015164C /* ImageTableMap.swift in Sources */,
 				1ECF4187212347860015164C /* Collection.swift in Sources */,
 				1ECF416C212346420015164C /* ImageSchema.swift in Sources */,
 				1ECF419821234D8C0015164C /* LockoutViewController.swift in Sources */,

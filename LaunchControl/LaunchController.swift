@@ -66,7 +66,7 @@ extension LaunchController {
      */
     func waitForLaunchNotifications(for services:[LaunchService], with center:NotificationCenter = NotificationCenter.default) {
         services.forEach { (service) in
-            waitIfNecessary(service, with:center)
+            waitIfNecessary(service, awaitedServices:services, with:center)
         }
     }
     
@@ -90,21 +90,14 @@ extension LaunchController {
     /**
      Adds a check for services that the controller should wait for before sending a final *DidCompleteLaunch* notification
      - parameter service: A *LaunchService* that needs to be checked for delaying the final *DidCompleteLaunch* notification
+     - parameter awaitedServices: An array of *LaunchService* that should be waited for
      - parameter center: the *NotificationCenter* to deregister and post *DidCompleteLaunch* on
      - Returns: void
      */
-    func waitIfNecessary(_ service: LaunchService, with center:NotificationCenter = NotificationCenter.default) {
-        var shouldWaitForDidCompleteNotification = false
-        
-        if service is RemoteStoreController {
-            shouldWaitForDidCompleteNotification = true
-        }
-        
-        if service is ErrorHandlerDelegate {
-            shouldWaitForDidCompleteNotification = true
-        }
-        
-        if shouldWaitForDidCompleteNotification, let name = didLaunchNotificationName(for: service) {
+    func waitIfNecessary(_ service: LaunchService, awaitedServices:[LaunchService], with center:NotificationCenter = NotificationCenter.default) {
+        if awaitedServices.contains(where: { (compareService) -> Bool in
+            return service.launchControlKey == compareService.launchControlKey
+        }), let name = didLaunchNotificationName(for: service) {
             waitForNotifications.insert(name)
             register(for: name, with:center)
         }
